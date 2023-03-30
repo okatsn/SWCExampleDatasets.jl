@@ -13,7 +13,9 @@ julia = "1.8"
 [extras]
 CompatHelperLocal = "5224ae11-6099-4aaa-941d-3aab004bd678"
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+TWAISWCF = "d9c8f7ca-66b2-433f-ab74-835b361b75b3"
 
 [targets]
-test = ["Test", "Documenter", "CompatHelperLocal"]
+test = ["Test", "Documenter", "CompatHelperLocal", "TWAISWCF", "DataFrames"]
