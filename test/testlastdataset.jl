@@ -3,13 +3,14 @@
     df = SWCExampleDatasets.datasets()
     @test isa(df, DataFrame)
     @test isa(SWCExampleDatasets.__datasets, DataFrame)
+    @test isequal(df, SWCExampleDatasets.__datasets)
 end
 
 @testset "TWAISWCF_test.jl" begin
     using TWAISWCF, DataFrames
-    lastrow = eachrow(SWCExampleDatasets.datasets()) |> last
+    # lastrow = eachrow(SWCExampleDatasets.datasets()) |> last
 
-    for lastrow in eachrow(SWCExampleDatasets.datasets())
+    for lastrow in eachrow(SWCExampleDatasets.__datasets)
         pkgnm = lastrow.PackageName
         datnm = lastrow.Dataset
         df = SWCExampleDatasets.dataset(pkgnm, datnm)
