@@ -8,7 +8,13 @@ end
 @testset "TWAISWCF_test.jl" begin
     using TWAISWCF, DataFrames
     lastrow = eachrow(SWCExampleDatasets.datasets()) |> last
-    df = SWCExampleDatasets.dataset(lastrow.PackageName, lastrow.Dataset)
-    PT = PrepareTableDefault(df) # data preprocessing
+
+    for lastrow in eachrow(SWCExampleDatasets.datasets())
+        pkgnm = lastrow.PackageName
+        datnm = lastrow.Dataset
+        df = SWCExampleDatasets.dataset(pkgnm, datnm)
+        PT = PrepareTableDefault(df) # data preprocessing
+        @info "$pkgnm/$datnm goes through `PrepareTableDefault` without error."
+    end
     @test true
 end
