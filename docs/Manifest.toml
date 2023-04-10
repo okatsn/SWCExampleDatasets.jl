@@ -2,7 +2,7 @@
 
 julia_version = "1.8.5"
 manifest_format = "2.0"
-project_hash = "0097d8765db2e8342269c0a10413618fe98d7821"
+project_hash = "e0c77beb18dc1f6cce661ebd60658c0c1a77390f"
 
 [[deps.ANSIColoredPrinters]]
 git-tree-sha1 = "574baf8110975760d391c710b6341da1afa48d8c"
@@ -89,11 +89,6 @@ uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 [[deps.SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
 version = "0.7.0"
-
-[[deps.SWCExampleDatasets]]
-path = ".."
-uuid = "d741b33f-378c-4fda-a3ef-81fb108a0236"
-version = "1.0.0-DEV"
 
 [[deps.Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
