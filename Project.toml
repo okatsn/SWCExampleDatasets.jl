@@ -7,7 +7,7 @@ version = "0.1.4"
 SmallDatasetMaker = "7016d903-ac20-4882-9d97-75c232100024"
 
 [compat]
-SmallDatasetMaker = "0.1.4"
+SmallDatasetMaker = "0.1.4, 0.2.0"
 julia = "1.8"
 
 [extras]
