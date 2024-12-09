@@ -1,14 +1,14 @@
 name = "SWCExampleDatasets"
 uuid = "d741b33f-378c-4fda-a3ef-81fb108a0236"
 authors = ["okatsn <okatsn@gmail.com> and contributors"]
-version = "0.1.5"
+version = "0.2.0"
 
 [deps]
 SmallDatasetMaker = "7016d903-ac20-4882-9d97-75c232100024"
 
 [compat]
-SmallDatasetMaker = "0.1.4, 0.2.0"
-julia = "1.8"
+SmallDatasetMaker = "0.3"
+julia = "1.10"
 
 [extras]
 CompatHelperLocal = "5224ae11-6099-4aaa-941d-3aab004bd678"
